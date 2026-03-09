@@ -1,0 +1,35 @@
+name: jordan_tourism
+description: "A new Flutter project for Jordan Tourism - Professional Edition"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # المكتبات الأساسية للصوت والفيديو
+  video_player: ^2.8.1
+  audioplayers: ^5.2.1
+  
+  # المكتبات الجديدة للـ UI الاحترافي والخرائط
+  google_fonts: ^6.2.1     # لإضافة خطوط عربية فخمة
+  url_launcher: ^6.3.0     # لفتح خرائط جوجل والمواقع الخارجية
+google_maps_flutter: ^2.5.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # تعريف الملفات والوسائط (تأكد من وجود الملفات فعلياً في المجلد)
+  assets:
+    - assets/images/
+    - assets/success.mp3
+    - assets/fail.mp3
+    - assets/clapping.mp3
+    - assets/jordan_tourism.mp4
